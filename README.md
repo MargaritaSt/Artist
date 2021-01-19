@@ -22,7 +22,6 @@ The project has 2 main folders:
 
 - create a `.env` file with your database settings. Look at .env.example for usage.
 
-
 - Modify the sql scripts under `db/schema/` to create the tables and seed the data.
 
 - run `npm run reset` that will run the reset scripts in package.json to reset the database. Modify the reset script in package.json accordingly:
@@ -31,12 +30,10 @@ The project has 2 main folders:
 "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "reset": "psql -U labber -d final_project < ./db/schema/create.sql && psql -U labber -d final_project < ./db/schema/seed.sql"
+    "reset": "psql -U username -d database_name < ./db/schema/create.sql && psql -U username -d database_name < ./db/schema/seed.sql"
   },
 ```
-- replace `labber` with your own username and `final_project` with your database name
-
-- currently, the users route is setup with a get and a post as examples. Modify it according to your needs and/or create additional route files.
+- replace `username` with your own username and `database_name` with your database name
 
 ## Client Setup
 
