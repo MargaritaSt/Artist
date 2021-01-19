@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/">
-            <Artist state ={state} setState={setState} radioState={radioState} setRadio={setRadio}/>
+            <Artist state ={state} setState={setState}/>
           </Route>
         </Switch>
       </Router>

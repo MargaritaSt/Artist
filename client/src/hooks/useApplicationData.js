@@ -4,7 +4,7 @@ import axios from 'axios';
 const useApplicationData = () => {
 
   const [state, setState] = useState([]);
-  const [radioState, setRadio] = useState(1);
+  
 
   useEffect(() => {
 
@@ -21,8 +21,6 @@ const useApplicationData = () => {
   return {
     state, 
     setState,
-    radioState,
-    setRadio
   }
 
 }

@@ -51,7 +51,7 @@ table,td,tr,th {
   background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width: 60%;
+  width: 39%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
@@ -61,5 +61,6 @@ table,td,tr,th {
 
 .body {
   height: 100%;
-  overflow: auto
+  overflow: auto;
+  padding-left: 500px;
 }
