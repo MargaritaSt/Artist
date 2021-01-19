@@ -1,7 +1,7 @@
 import React from 'react';
 import useApplicationData from './hooks/useApplicationData';
 import './App.css';
-import Artist from './pages/Artists';
+import Artist from './components/Artists';
 
 import {
   BrowserRouter as Router,
