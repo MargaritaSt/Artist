@@ -1,0 +1,65 @@
+table,td,tr,th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+#th{
+  font-size: 40px;
+  
+
+}
+.payoutColumn{
+  width: 50px;
+	padding-left: 20px;
+
+}
+.nameColumn{
+  width: 400px;
+  padding-left: 20px;
+  text-align: center;
+}
+.rateColumn{
+  width: 250px;
+  padding: 4px 0 2px 0;
+  text-align: center;
+}
+.streamsColumn {
+  width: 300px;
+	padding: 4px 0 2px 0;
+	text-align: center;
+}
+.paColumn{
+  width: 300px;
+	padding: 4px 0 2px 0;
+	text-align: center;
+}
+
+.artistList {
+  display:flex;
+  align-items: center;
+  text-align: center;
+}
+.tableArtist{
+  width:60%;
+  height: 300px;
+
+}
+.header {
+  text-align: center;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 60%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+.tableArtist tr:hover {background-color: #ddd;}
+
+.body {
+  height: 100%;
+  overflow: auto
+}
