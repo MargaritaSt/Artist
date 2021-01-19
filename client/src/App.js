@@ -1,7 +1,6 @@
 import React from 'react';
 import useApplicationData from './hooks/useApplicationData';
 import './App.css';
-import addId from './helpers/dataID';
 import Artist from './pages/Artists';
 
 import {
@@ -10,17 +9,15 @@ import {
   Route
 } from "react-router-dom";
 
-
-
 function App() {
-  const {state, setState, radioState, setRadio}  = useApplicationData([]);
-// addId(state);
+  const {state, setState, data}  = useApplicationData([]);
+
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route path="/">
-            <Artist state ={state} setState={setState}/>
+            <Artist state ={state} setState={setState} data={data}/>
           </Route>
         </Switch>
       </Router>

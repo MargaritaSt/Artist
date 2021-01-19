@@ -3,11 +3,9 @@ table,td,tr,th {
   border-collapse: collapse;
   text-align: left;
 }
-#th{
+/* #th{
   font-size: 40px;
-  
-
-}
+} */
 .payoutColumn{
   width: 50px;
 	padding-left: 20px;
@@ -39,11 +37,52 @@ table,td,tr,th {
   align-items: center;
   text-align: center;
 }
+
+/* Table format */
+th {
+  background-color: lightgray;
+}
+.table-sticky-container {
+  height: 800px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+}
+
 .tableArtist{
   width:60%;
-  height: 300px;
-
+  display: inline-block;
 }
+
+.tableArtist th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th:after,
+th:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+th:before {
+  top: -1px;
+  border-top: 1px solid #c0c0c0;
+}
+
+th:after {
+  bottom: -1px;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.tableArtist tr:hover {background-color: #ddd;}
+/* End of Table format */
+
 .header {
   text-align: center;
 }
@@ -56,11 +95,4 @@ table,td,tr,th {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
-}
-.tableArtist tr:hover {background-color: #ddd;}
-
-.body {
-  height: 100%;
-  overflow: auto;
-  padding-left: 500px;
 }
