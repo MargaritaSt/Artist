@@ -22,8 +22,6 @@ The project has 2 main folders:
 
 - create a `.env` file with your database settings. Look at .env.example for usage.
 
-- Modify the sql scripts under `db/schema/` to create the tables and seed the data.
-
 - run `npm run reset` that will run the reset scripts in package.json to reset the database. Modify the reset script in package.json accordingly:
 
 ```json
@@ -38,6 +36,6 @@ The project has 2 main folders:
 ## Client Setup
 
 - A custom hook in `hooks/useApplicationData.js` contains the state.
-- a `useEffect` with an axios request is adding the users in the state. Modify the initial state and the useEffect according to your needs. 
+- a `useEffect` with an axios request is adding the Artists in the state.  
 
 
