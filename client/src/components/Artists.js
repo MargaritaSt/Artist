@@ -11,7 +11,7 @@ export default function Login(props) {
   useEffect (() => {
     const length = value.length;
     if (value!== '') {
-      const  newArr = data.filter(element => element.artist.substring(0,length)===value)
+      const  newArr = data.filter(element => element.artist.substring(0,length).toUpperCase() === value.toUpperCase())
       setState(newArr)
     } else {
       setState(data)}

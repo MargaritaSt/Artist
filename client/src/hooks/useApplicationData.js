@@ -6,7 +6,7 @@ const useApplicationData = () => {
   const [state, setState] = useState([]);
   const [data, setData] = useState([]);
   
-  /* GET Artists listing. */
+  /* axios GET request is adding the Artists in the state. */
   useEffect(() => {
     axios({
       method: 'GET',
